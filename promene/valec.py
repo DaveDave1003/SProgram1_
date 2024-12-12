@@ -1,8 +1,8 @@
 import math
 
 #Napiš libovolné hodnoty
-vyska = int(input("Zadejte výšku: "))
-polomer = int(input("Zadejte poloměr: "))
+vyska = float(input("Zadejte výšku: "))
+polomer = float(input("Zadejte poloměr: "))
 
 
 #Výsledné hodnoty
