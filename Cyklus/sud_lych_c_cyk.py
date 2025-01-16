@@ -1,7 +1,18 @@
 import math
 
-Mez1 = int(input("Zadej 1. mez: "))
-Mez2 = int(input("Zadej 2. mez: "))
+#Zadejte hodnotu
+Mez1 = int(input("Zadej hodnotu meze po kterou se bude generovat: "))
 
-for x in range(Mez1, Mez2):
-    print (x)
+#Kontrola přirozeného čísla
+if Mez1 <= 0:
+    print("Zadaná hodnota není přirozené číslo")
+#rozdělení na sudá a lichá    
+else:
+    #Od 1 po zadanou hodnotu,aby šla i ta vidět
+    for x in range(1, Mez1 + 1):
+        #Rozdělení do sudých a lichých
+        if x % 2 == 0:
+            print (f"Číslo {x} je sudé.")
+
+        else:
+            print (f"Číslo {x} je liché.")

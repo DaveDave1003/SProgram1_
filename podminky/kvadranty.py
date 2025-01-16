@@ -20,3 +20,4 @@ elif X == 0 and Y != 0:
     print("Bod leží na ose Y")
 else:
     print("Bod leží v počátku")
+
