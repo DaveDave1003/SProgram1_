@@ -5,5 +5,3 @@ X = int(input("Zadej přirozené číslo: "))
 
 if X <= 0:
     print("Zadaná hodnota není přirozené číslo")
-else:
-    for X in range (1)
