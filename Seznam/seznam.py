@@ -1,0 +1,1 @@
+#https://gjs-education.vercel.app/seminare/prog1/python/seznamy/modifikace-seznamu
