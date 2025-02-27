@@ -12,9 +12,9 @@ for i in range(pocet):
 n = input("Jaké číslo hledáš: ")
 
 for i in range(len(S)):
-    if n == S[i]:
-        print("Hledané číslo v seznamu")
-        break
+    if S[i] == n:
+        print("Hledané číslo je v seznamu")
+        
         
     else:
         print("Hledané číslo v seznamu není")
