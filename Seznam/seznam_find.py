@@ -13,7 +13,7 @@ n = input("Jaké číslo hledáš: ")
 
 for i in range(len(S)):
     if n == S[i]:
-        print("Hledané číslo má index ")
+        print("Hledané číslo v seznamu")
         break
         
     else:
