@@ -1,4 +1,30 @@
-L = [2, 3, 1, 0, 5, 6, 4, 2]
+import math
 
-#Najdi 0 a 2 a pak 0 = 3 a 2 = 0,7
 
+pocet = int(input("Kolik hodnot bude v seznamu: "))
+
+S = []
+
+for i in range(pocet):
+    i = input("Zadej hodnotu do S: ")
+    S.append (i)
+
+n = input("Jaké číslo hledáš: ")
+
+for i in range(len(S)):
+    if n == S[i]:
+        print("Hledané číslo má index ")
+        break
+        
+    else:
+        print("Hledané číslo v seznamu není")
+    
+    
+
+
+
+
+
+
+print (S)
+print(len(S))
