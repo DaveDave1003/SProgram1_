@@ -10,6 +10,6 @@ if X <= 0:
 
 
 else:
-    for x in range (1, X+1):
-        faktorial*=x
+    for i in range (1, X+1):
+        faktorial*=i
     print(f"Faktoriál čísla {X} je {faktorial}")
