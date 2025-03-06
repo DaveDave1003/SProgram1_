@@ -24,7 +24,7 @@ for znak in zasifrovany_text:
     if znak in abeceda:
         for i in range(len(abeceda)):
             if znak == abeceda[i]:
-                novy_znak = abeceda[(i-klic) % len(abeceda)]
+                novy_znak = abeceda[(i-klic)% len(abeceda)]
                 puvodni_text += novy_znak
 
 print(puvodni_text)
