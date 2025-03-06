@@ -13,17 +13,9 @@ n = input("Jaké číslo hledáš: ")
 
 for i in range(len(S)):
     if S[i] == n:
-        print("Hledané číslo je v seznamu")
+        print(f"Hledané číslo je v seznamu na pozici {i}")
         
         
-    else:
-        print("Hledané číslo v seznamu není")
-    
-    
-
-
-
-
 
 
 print (S)
