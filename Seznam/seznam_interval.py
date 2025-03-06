@@ -3,18 +3,24 @@ import math
 
 
 
-pocet = int(input("Kolik hodnot bude v seznamu: "))
-S = []
+delka = int(input("Kolik hodnot bude v seznamu: "))
+cisla = []
 
-for i in range(pocet):
-    i = input("Zadej hodnotu do S: ")
-    S.append (i)
+for i in range(delka):
+    i = int(input("Zadej hodnotu do S: "))
+    cisla.append (i)
 
 
-dolni = int(input("Dolní hranice intervalu: "))
-horni = int(input("Horní hranice intervalu: "))
+dolni_mez = int(input("Dolní mez intervalu: "))
+horni_mez = int(input("Horní mez intervalu: "))
 
-for x in S:
+pocet = 0
+
+for cislo in cisla:
+    if dolni_mez <= cislo <= horni_mez:
+        pocet += 1
+
+print(f"V zadaném rozmezí leží {pocet} cisla")
     
 
 

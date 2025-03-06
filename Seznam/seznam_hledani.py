@@ -1,22 +1,29 @@
 import math
 
 
-pocet = int(input("Kolik hodnot bude v seznamu: "))
+delka = int(input("Kolik hodnot bude v seznamu: "))
 
 S = []
 
-for i in range(pocet):
+for i in range(delka):
     i = input("Zadej hodnotu do S: ")
     S.append (i)
 
-n = input("Jaké číslo hledáš: ")
+print(S)
+
+
+hledana_hodnota = input("Jaké číslo hledáš: ")
 
 for i in range(len(S)):
-    if S[i] == n:
+    if S[i] == hledana_hodnota:
         print(f"Hledané číslo je v seznamu na pozici {i}")
         
-        
+indexy = []        
+for i in range(len(S)):
+    if S[i] == hledana_hodnota:
+        indexy.append(i)
 
-
-print (S)
-print(len(S))
+if len(indexy) > 0:
+    print(f"hledana hodnota ze seznamu se objevila na indexu {indexy}")
+else:
+    print("hledana honota nebyla nalezena")
