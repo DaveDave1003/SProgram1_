@@ -1,24 +1,25 @@
 
 
 
-i = 60
-X = 0
 
-def prevod_na_minuty(hodiny,minuty):
-    i = hodiny / 60 
+def prevod_na_minuty(hodiny, int):
+   
+   if not isinstance(hodiny, int):
+        return None
 
-    X = minuty + i 
-    return X
+    if not isinstance(minuty,int):
+        return None
+    
+    
+    if hodiny < 0 or minuty < 0:
+        return None
+
+    celkem_minut = hodiny * 60 + minuty
+    return celkem_minut
+
+print(prevod_na_minuty(1,20))
+
+   
     
 
 
-
-
-
-
-
-
-hodiny = int(input("Kolik je hodin: "))
-minuty = int(input("Kolik je minut: "))
-
-print (prevod_na_minuty(hodiny,minuty))
