@@ -11,9 +11,9 @@ def je_palindrom_v2(slovo):
 
     for i in range(len(slovo) //2):
         if slovo[i] == slovo[len(slovo) - 1 - i]:
-            return False
+            return false
     
-    return True
+    return true
 
 
 # print(je_palindrom_v1("madam"))
