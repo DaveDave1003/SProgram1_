@@ -9,7 +9,7 @@ def nejdelsi_slovo_v1(text):
         if len(aktualne_nejvetsi_slovo) < len(slovo):
             aktualne_nejvetsi_slovo = slovo
     
-    returtn aktualne_nejvetsi_slovo
+    return aktualne_nejvetsi_slovo
 
 
 def nejdelsi_slovo_v2(text):
