@@ -6,20 +6,20 @@ import random
 def zamichej_slovo(slovo):
     
     nove_slovo = ""
-    # oznaceni pouzitych pismen
+    # oznaceni pismen v seznamu 
     pouzito = [False] * len(slovo)  
     
     while len(nove_slovo) < len(slovo):
         # michani pismen
-        michani = random.randint(0, len(slovo) - 1)  
+        index = random.randint(0, len(slovo) - 1)  
 
-        if not pouzito[michani]:
-            #misto pismena
-            nove_slovo += slovo[michani] 
+        if not pouzito[index]:
+            #misto pismena v novem slove
+            nove_slovo += slovo[index] 
             # pouzito  
-            pouzito[michani] = True       
+            pouzito[index] = True       
     #vysledek
     return nove_slovo
 
 
-print(zamichej_slovo("míchání"))
+print(zamichej_slovo("auto"))
