@@ -3,7 +3,7 @@ def bubble_sort_verbose(arr):
     print("Původní pole:", arr)
 
     for i in range(n - 1):
-        print(f"Průchod {i+1}:")
+        print(f"\nPrůchod {i+1}:")
         for j in range(n - 1 - i):
             print(f"  Porovnávám {arr[j]} a {arr[j+1]}...", end=" ")
             if arr[j] > arr[j + 1]:
@@ -13,7 +13,7 @@ def bubble_sort_verbose(arr):
                 print("nechám beze změny")
         print("Výsledek po průchodu:", arr)
 
-    print("Konečně seřazeno:", arr)
+    print("\nKonečně seřazeno:", arr)
     return arr
 
 
