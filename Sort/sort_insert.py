@@ -33,7 +33,9 @@ def insertion_sort_v2(pole):
 
     print("Seřazené pole:", pole)
 
-
+# -----------------------------
+# Přímý vstup od uživatele
+# -----------------------------
 pole = [3,2,5,4,1]
 insertion_sort_v2(pole)
 print(pole)

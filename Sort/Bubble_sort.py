@@ -20,7 +20,5 @@ def bubble_sort_verbose(arr):
 # -----------------------------
 # Přímý vstup od uživatele
 # -----------------------------
-user_input = input("Zadej čísla oddělená čárkou (např. 5,3,8,4,2): ")
-data = [int(x.strip()) for x in user_input.split(",")]
-
-bubble_sort_verbose(data)
+arr = [4,5,3,2,1]
+bubble_sort_verbose(arr)
