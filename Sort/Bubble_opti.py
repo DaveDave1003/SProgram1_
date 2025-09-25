@@ -1,4 +1,4 @@
-def bubble_sort_optimalizovany(arr):
+def cocktail_sort(arr):
     n = len(arr)
     
     slozitost = 0
