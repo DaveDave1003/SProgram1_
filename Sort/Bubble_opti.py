@@ -1,19 +1,37 @@
-def cocktail_sort(arr):
-    n = len(arr)
-    
+import random
+
+
+def cocktail_sort(pole):
+    n = len(pole)
+    start = 0
+    end = n - 1
     slozitost = 0
-    for i in range(n - 1):
+    while start < end:
+        prohodil_se = False
         
-        prohodil_se = False  # Flag pro detekci výměn
         
-        for j in range(n - 1):
+        for i in range(start, end):
             slozitost += 1
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                prohodil_se = True  # Zaznamenáme výměnu
+
+            if pole[i] > pole[i + 1]:
+                pole[i], pole[i + 1] = pole[i + 1], pole[i]
+                prohodil_se = True
+        end -= 1 
         
-        # Pokud se nic neprohodilo, pole je seřazené!
         if not prohodil_se:
             break
+            
         
-    return arr, slozitost
+        for i in range(end, start, -1):
+            slozitost += 1
+            if pole[i] < pole[i - 1]:
+                pole[i], pole[i - 1] = pole[i - 1], pole[i]
+                prohodil_se = True
+        start += 1  
+        
+        if not prohodil_se:
+            break
+    
+    return pole , slozitost
+
+

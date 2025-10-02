@@ -1,17 +1,38 @@
+import matplotlib.pyplot as plt
 import random
 test = list(range(50))
 random.shuffle(test)
 
-print(test)
-
 
 from Bubble_normal import bubble_sort_normal
-from Bubble_opti import bubble_sort_optimalizovany
+from Bubble_opti import cocktail_sort
 from Bubble_short import bubble_sort_kratsi_rozsah
 from Bubble_detection import bubble_sort_s_detekci
+from sort_insert import insertion_sort
 
 print(bubble_sort_normal(test[:]))
-print(bubble_sort_optimalizovany(test[:]))
-print(bubble_sort_kratsi_rozsah(test[:]))
 print(bubble_sort_s_detekci(test[:]))
+print(bubble_sort_kratsi_rozsah(test[:]))
+print(cocktail_sort(test[:]))
+print(insertion_sort(test[:]))
 
+measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+
+
+def jeden_seznam(algoritmus, list_lenght):
+    test_seznam = list(range(list_lenght))
+    random.shuffle(test_seznam)
+    return algoritmus(test_seznam)[1]
+
+
+def cely_seznam(algoritmus):
+    vysledek = []
+    for list_lenght in measure_lenghts:
+        vysledek.append(jeden_seznam(algoritmus, list_lenght))
+    return vysledek
+
+plt.plot(measure_lenghts, (bubble_sort_normal), label="Normal", color="#1B17F3")
+plt.plot(measure_lenghts, (bubble_sort_s_detekci), label="Detection", color="#1D7E09")
+plt.plot(measure_lenghts, (bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
+plt.plot(measure_lenghts, (cocktail_sort), label="Cocktail", color="#C7760B")
+plt.plot(measure_lenghts, (insertion_sort), label="Insertion", color="#C4076F")

@@ -1,3 +1,4 @@
+import random
 def bubble_sort_s_detekci(pole):
     n = len(pole)
     slozitost = 0
@@ -27,5 +28,3 @@ def bubble_sort_s_detekci(pole):
 
 
 
-pole = [1,2,4,3,5]
-bubble_sort_s_detekci(pole)
