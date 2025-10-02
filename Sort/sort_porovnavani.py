@@ -29,7 +29,7 @@ plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Detection",
 plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
 plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#C7760B")
 plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
-
+plt.plot
 
 plt.legend()
 plt.show()
