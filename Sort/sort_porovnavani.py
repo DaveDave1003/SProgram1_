@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 import random
-test = list(range(50))
-random.shuffle(test)
 
 
 from Bubble_normal import bubble_sort_normal
@@ -10,13 +8,8 @@ from Bubble_short import bubble_sort_kratsi_rozsah
 from Bubble_detection import bubble_sort_s_detekci
 from sort_insert import insertion_sort
 
-print(bubble_sort_normal(test[:]))
-print(bubble_sort_s_detekci(test[:]))
-print(bubble_sort_kratsi_rozsah(test[:]))
-print(cocktail_sort(test[:]))
-print(insertion_sort(test[:]))
 
-measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
 
 
 def jeden_seznam(algoritmus, list_lenght):
@@ -31,8 +24,12 @@ def cely_seznam(algoritmus):
         vysledek.append(jeden_seznam(algoritmus, list_lenght))
     return vysledek
 
-plt.plot(measure_lenghts, (bubble_sort_normal), label="Normal", color="#1B17F3")
-plt.plot(measure_lenghts, (bubble_sort_s_detekci), label="Detection", color="#1D7E09")
-plt.plot(measure_lenghts, (bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
-plt.plot(measure_lenghts, (cocktail_sort), label="Cocktail", color="#C7760B")
-plt.plot(measure_lenghts, (insertion_sort), label="Insertion", color="#C4076F")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_normal), label="Normal", color="#1B17F3")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Detection", color="#1D7E09")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
+plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#C7760B")
+plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
+
+
+plt.legend()
+plt.show()
