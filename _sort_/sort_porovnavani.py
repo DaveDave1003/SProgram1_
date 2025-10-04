@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 import random
 
 
-from Bubble_normal import bubble_sort_normal
+from _sort_.Bubble_normal import bubble_sort_normal
 from Bubble_opti import cocktail_sort
 from Bubble_short import bubble_sort_kratsi_rozsah
-from Bubble_detection import bubble_sort_s_detekci
+from _sort_.Bubble_detection import bubble_sort_s_detekci
 from sort_insert import insertion_sort
-
+from sort_selection import selection_sort
 
 measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
 
@@ -29,7 +29,7 @@ plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Detection",
 plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
 plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#C7760B")
 plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
-plt.plot
+plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Selec", color="#00FFBF")
 
 plt.legend()
 plt.show()

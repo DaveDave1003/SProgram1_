@@ -2,8 +2,10 @@ def selection_sort(pole):
 
     slozitost = 0
 
-    for i in range(len(pole) - 1):
 
+    #Všechny prvky v poli
+    for i in range(len(pole) - 1):
+        #Pamatov
         nejmensi_index = i
 
         for kontrolovany_index in range(i, len(pole)):
