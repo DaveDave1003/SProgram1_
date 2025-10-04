@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import random
 
 
-from _sort_.Bubble_normal import bubble_sort_normal
+from Bubble_normal import bubble_sort_normal
 from Bubble_opti import cocktail_sort
 from Bubble_short import bubble_sort_kratsi_rozsah
-from _sort_.Bubble_detection import bubble_sort_s_detekci
+from Bubble_detection import bubble_sort_s_detekci
 from sort_insert import insertion_sort
 from sort_selection import selection_sort
 
