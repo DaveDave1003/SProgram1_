@@ -28,7 +28,7 @@ def cely_seznam(algoritmus):
 
 
 #graficke zobrazeni efektivity funkce
-plt.plot(measure_lenghts, cely_seznam(bubble_sort_normal), label="Normal", color="#1B17F3")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_normal), label="Bubble", color="#1B17F3")
 plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Detection", color="#1D7E09")
 plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
 plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#C7760B")
