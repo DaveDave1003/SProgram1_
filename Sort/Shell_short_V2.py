@@ -1,11 +1,9 @@
 import random
 
 
-
-
-def shell_sort(arr):
+def shell_sort_v2(arr):
     n = len(arr)
-    gap = n // 2
+    gap = 3 * n + 1
     slozitost = 0
 
     while gap > 0:
@@ -19,10 +17,6 @@ def shell_sort(arr):
                 arr[j] = arr[j - gap]
                 j -= gap
             arr[j] = temp
-        gap //= 2
+        gap //= 3
 
     return arr, slozitost
-
-
-
-
