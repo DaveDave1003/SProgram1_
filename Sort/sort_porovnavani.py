@@ -9,7 +9,8 @@ from Bubble_detection import bubble_sort_s_detekci
 from sort_insert import insertion_sort
 from sort_selection import selection_sort
 from shell_sort import shell_sort
-from Shell_short_V2 import shell_sort_v2
+from Shell_sort_V2 import shell_sort_v2
+from Quick_sort import Quick_sort
 
 #Ruzne velke seznamy s nahodne serazenymi cisly
 measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
@@ -37,7 +38,7 @@ plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color=
 plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Selec", color="#00FFBF")
 plt.plot(measure_lenghts, cely_seznam(shell_sort), label="Shell", color="#000000")
 plt.plot(measure_lenghts, cely_seznam(shell_sort_v2), label="Shell V2", color="#FF00FF")
-
+plt.plot(measure_lenghts, cely_seznam(Quick_sort), label ="Quick", color="#02283A")
 
 plt.legend()
 plt.show()
