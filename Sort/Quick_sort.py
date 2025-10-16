@@ -4,7 +4,7 @@
 def Quick_sort(arr):
     slozitost = 0 
 
-    def sort(start, end):
+    def partition(start, end):
         nonlocal slozitost
         if start >= end:
             return
@@ -26,11 +26,11 @@ def Quick_sort(arr):
                 j -= 1
 
         if start < j:
-            sort(start, j)
+            partition(start, j)
         if i < end:
-            sort(i, end)
+            partition(i, end)
 
-    sort(0, len(arr) - 1)
+    partition(0, len(arr) - 1)
     return arr, slozitost
 
 
