@@ -11,7 +11,7 @@ from sort_selection import selection_sort
 from shell_sort import shell_sort
 from Shell_sort_V2 import shell_sort_v2
 from Quick_sort_DOH_v1 import quick_celek
-
+from merge_sort import split_merge
 #Ruzne velke seznamy s nahodne serazenymi cisly
 
 measure_lenghts = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]
@@ -39,8 +39,9 @@ plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#
 plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
 plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Selec", color="#00FFBF")
 plt.plot(measure_lenghts, cely_seznam(shell_sort), label="Shell", color="#000000")
-plt.plot(measure_lenghts, cely_seznam(shell_sort_v2), label="Shell V2", color="#FF00FF")
+plt.plot(measure_lenghts, cely_seznam(shell_sort_v2), label="Shell V2", color="#301A30")
 plt.plot(measure_lenghts, cely_seznam(quick_celek), label ="Quick", color="#02283A")
+plt.plot(measure_lenghts, cely_seznam(split_merge), label="Merge", color="#304E29")
 
 plt.style.use('dark_background')
 
