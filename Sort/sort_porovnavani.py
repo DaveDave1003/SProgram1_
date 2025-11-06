@@ -37,9 +37,9 @@ plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Bubble_v2",
 plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Bubble_v3", color="#A7100B")
 plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Bubble_v4", color="#C7760B")
 plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
-plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Selec", color="#00FFBF")
+plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Select", color="#00FFBF")
 plt.plot(measure_lenghts, cely_seznam(shell_sort), label="Shell", color="#000000")
-plt.plot(measure_lenghts, cely_seznam(shell_sort_v2), label="Shell V2", color="#301A30")
+plt.plot(measure_lenghts, cely_seznam(shell_sort_v2), label="Shell_v2", color="#301A30")
 plt.plot(measure_lenghts, cely_seznam(quick_celek), label ="Quick", color="#02283A")
 plt.plot(measure_lenghts, cely_seznam(split_merge), label="Merge", color="#304E29")
 
