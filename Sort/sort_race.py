@@ -49,10 +49,7 @@ def python(arr):
 
     return
 
-def pyth(arr):
-    arr.sort()
-    
-    return
+
 
 def Quick_sort(arr):
     slozitost = 0 
@@ -131,8 +128,8 @@ def partition(arr, low, high):
             arr[i], arr[j] = arr[j], arr[i]
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
-
-def hybrid_quick_sort(arr, low=0, high=None, threshold=10):
+#17 - 12, 
+def hybrid_quick_sort(arr, low=0, high=None, threshold=12):
     if high is None:
         high = len(arr) - 1
     while low < high:
@@ -149,12 +146,17 @@ def hybrid_quick_sort(arr, low=0, high=None, threshold=10):
                 high = pivot_index - 1
     return arr
 
+
+
 arr1 = arr.copy()
 arr2 = arr.copy()
 arr3 = arr.copy()
 arr4 = arr.copy()
-arr5 = arr.copy()
+
 arr6 = arr.copy()
+
+
+
 
 start_merge = time.perf_counter()
 split_merge(arr1)
@@ -173,9 +175,7 @@ start_shell = time.perf_counter()
 shell_sort_v2(arr4)
 end_shell= time.perf_counter()
 
-start_pyth = time.perf_counter()
-pyth(arr5)
-end_pyth= time.perf_counter()
+
 
 start_hybrid = time.perf_counter()
 hybrid_quick_sort(arr6)
@@ -183,9 +183,10 @@ end_hybrid = time.perf_counter()
 
 
 
+
 print(f"merge trval: {end_merge - start_merge:.6f} s")
 print(f"SORTED trval: {end_python - start_python:.6f} s")
-print(f"sort trval: {end_pyth - start_pyth: .6f} s")
+
 print(f"quick trval: {end_quick - start_quick:.6f} s")
 print(f"shell trval: {end_shell - start_shell:.6f} s")
 print(f"hybrid trval: {end_hybrid - start_hybrid: .6f} s")
