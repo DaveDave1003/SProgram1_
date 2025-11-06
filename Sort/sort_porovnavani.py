@@ -32,10 +32,10 @@ def cely_seznam(algoritmus):
 
 
 #graficke zobrazeni efektivity funkce
-plt.plot(measure_lenghts, cely_seznam(bubble_sort_normal), label="Bubble", color="#1B17F3")
-plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Detection", color="#1D7E09")
-plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Short", color="#A7100B")
-plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Cocktail", color="#C7760B")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_normal), label="Bubble_v1", color="#1B17F3")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_s_detekci), label="Bubble_v2", color="#1D7E09")
+plt.plot(measure_lenghts, cely_seznam(bubble_sort_kratsi_rozsah), label="Bubble_v3", color="#A7100B")
+plt.plot(measure_lenghts, cely_seznam(cocktail_sort), label="Bubble_v4", color="#C7760B")
 plt.plot(measure_lenghts, cely_seznam(insertion_sort), label="Insertion", color="#C4076F")
 plt.plot(measure_lenghts, cely_seznam(selection_sort), label="Selec", color="#00FFBF")
 plt.plot(measure_lenghts, cely_seznam(shell_sort), label="Shell", color="#000000")
