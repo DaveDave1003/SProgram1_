@@ -29,23 +29,7 @@ class Cislo:
         return f"Vysledek ({self.hodnota})"
 
 
-class Zlomek:
-    def __init__(self, citatel, jmenovatel=1):
-        self.citatel = citatel
-        self.jmenovatel = jmenovatel
-        
-        if jmenovatel == 0:
-            pass
-        
-    def __str__(self):
-       return f"{int(self.citatel)} / {int(self.jmenovatel)}"
-        
 
-
-
-
-c = Zlomek(4, 2)
-print(c)
 
 
 
