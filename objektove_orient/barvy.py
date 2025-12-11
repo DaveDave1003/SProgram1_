@@ -46,9 +46,12 @@ class Barva:
         # TODO: Vrať string ve formátu "#RRGGBB"
         return f"HEX(#{hex_r}{hex_g}{hex_b})"
 
-oranzova = Barva(255, 100, 0)
-print(f"{oranzova} = {oranzova.to_hex()}")  
-# RGB(255, 100, 0) = #FF6400
-bila = Barva(255, 255, 255)
-print(f"{bila} = {bila.to_hex()}")  
-# RGB(255, 255, 255) = #FFFFFF
+    def to_grayscale(self):
+        gray = int(0.299 * self.r + 0.587 * self.g + 0.114 * self.b)
+        return Barva(gray, gray, gray)
+    
+
+oranzova = Barva(255, 100, 50)
+seda = oranzova.to_grayscale()
+print(f"{oranzova} -> {seda}")  
+# RGB(255, 100, 50) -> RGB(135, 135, 135)
