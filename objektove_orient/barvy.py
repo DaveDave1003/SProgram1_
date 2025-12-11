@@ -36,6 +36,13 @@ class Barva:
         hex_r = hex(self.r)[2:]
         hex_g = hex(self.g)[2:]
         hex_b = hex(self.b)[2:]
+
+        if len(hex_r) == 1:
+            hex_r = "0" + hex_r
+        if len(hex_g) == 1:
+            hex_g = "0" + hex_g
+        if len(hex_b) == 1:
+            hex_b = "0" + hex_b
         # TODO: Vrať string ve formátu "#RRGGBB"
         return f"HEX(#{hex_r}{hex_g}{hex_b})"
 
