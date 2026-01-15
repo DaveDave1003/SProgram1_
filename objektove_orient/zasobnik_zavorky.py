@@ -8,17 +8,20 @@ class Kontrola_zavorky:
         for znak in self.text:
             if znak in self.zavorky.values():
                 self.zasobnik.append(znak)
+
             elif znak in self.zavorky:
                 if not self.zasobnik:
                     return False
+                
                 if self.zasobnik.pop() != self.zavorky[znak]:
                     return False
+                
         return len(self.zasobnik) == 0
     
 
-texty = ["((a+b)*c)", "(a+b)", "(a+b", "a+b)", ")(", ","]
+text = ["((a+b)*c)", "(a+b)", "(a+b", "a+b)", ")(", ""]
 
-for item in texty:
+for item in text:
     kontrola = Kontrola_zavorky(item)
     vysledek = kontrola.zkontroluj()
     print(f"{item} -> {vysledek}")
