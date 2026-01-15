@@ -69,13 +69,6 @@ class Stack:
             return self.next.size() + 1
         return 1
     
-zasobnik = Stack()
-print(zasobnik.isEmpty())
-zasobnik.push(1)
-zasobnik.push(68)
-
-print(zasobnik.size())
-print(zasobnik.isEmpty())
 
 
 
