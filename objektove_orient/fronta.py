@@ -30,13 +30,19 @@ class Queue:
     
 q = Queue()
 
+print(q.isEmpty())  # True
 q.enqueue(1)
 q.enqueue(2)
 q.enqueue(3)
 
+print(q.peek())     # 1
 print(q.dequeue())  # 1
+
 print(q.dequeue())  # 2
-print(q.peek())     # 3
+print(q.isEmpty())
+
+
 print(q.dequeue())  # 3
+
 print(q.isEmpty())  # True
 print(q.dequeue())
