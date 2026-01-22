@@ -28,6 +28,7 @@ class Rectangle:
     def area(self):
         sirka_A = abs(self.p2.x - self.p1.x)
         vyska_B = abs(self.p4.y - self.p1.y)
+        
         return sirka_A * vyska_B
 
     def contains_point(self, point):
