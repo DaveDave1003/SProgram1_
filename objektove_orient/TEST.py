@@ -4,7 +4,7 @@ class Point:
         self.x = x
         self.y = y
 
-    def vypis_P(self):
+    def __str__(self):
         return f"({self.x}, {self.y})"
 
     def move(self, dx, dy):
@@ -19,7 +19,7 @@ class Rectangle:
         self.p4 = p4
     
 
-    def move(self, dx, dy):
+    def move(self, dx=0, dy=0):
         self.p1.move(dx,dy)
         self.p2.move(dx,dy)
         self.p3.move(dx,dy)
@@ -45,11 +45,6 @@ class Rectangle:
             p.x = x_scaled + (p.x - x_scaled) * factor
             p.y = y_scaled + (p.y - y_scaled) * factor
 
-
-
-
-
-
 p = Point(2, 3)
 print(p.x, p.y)   # 2 3
 
@@ -64,7 +59,7 @@ print(r.p1.x, r.p1.y) #1 2
 print(r.p3.x, r.p3.y) #5 6
 
 
-r.move(2, -1)
+r.move(dy=2)
 print(r.p1.x, r.p1.y) #3 1
 print(r.p4.x, r.p4.y) #3 5
 
