@@ -10,7 +10,7 @@ for x in range(abs(Exponent)):
     X *= Zaklad
 
     # Pokud je exponent záporný, obrátíme výsledek
-if Zaklad < 0:
+if Exponent < 0:
     X = 1 / X
 
 # VÝSLEDEK
