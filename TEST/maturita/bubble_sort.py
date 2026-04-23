@@ -13,6 +13,7 @@ def bubble_sort(pole):
     return pole, slozitost
 
 
+delka = int(input("Zadej délku seznamu: "))
+pole = []
 
-
-        
+for i in range delka       
