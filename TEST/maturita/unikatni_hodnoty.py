@@ -25,7 +25,7 @@ X = int(input("Délka seznamu: "))
 seznam = []
 
 for i in range(X):
-    seznam.append(random.randint(0, int(X / 3)))
+    seznam.append(random.randint(0, int(X)))
 
 
 

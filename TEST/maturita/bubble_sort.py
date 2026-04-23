@@ -1,3 +1,7 @@
+import random
+
+
+
 def bubble_sort(pole):
     delka = pole(len)
     slozitost = 0
@@ -16,4 +20,5 @@ def bubble_sort(pole):
 delka = int(input("Zadej délku seznamu: "))
 pole = []
 
-for i in range delka       
+for i in range:
+    pole.append(random.randint(0, int(delka)))       
