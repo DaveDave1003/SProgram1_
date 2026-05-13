@@ -21,3 +21,5 @@ def je_silne_heslo(heslo):
 
 
 print(je_silne_heslo('Heslo123'))
+print(je_silne_heslo('Heslo'))
+print(je_silne_heslo('heslo12'))
