@@ -12,4 +12,4 @@ def pyramida(n):
 
 
 print(pyramida(3))
-print(pyramida(100))
+print(pyramida(7))
